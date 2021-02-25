@@ -1,8 +1,8 @@
 print("Enter n and m:")
 try:
     string_n, m = input().split()
-    sum, quantity = 0, int(m)
     if string_n.isdigit() and m.isdigit():
+        sum, quantity = 0, int(m)
         if len(string_n) > quantity:
             for digit in list(string_n[:len(string_n) - int(quantity) - 1:-1]):
                 sum += int(digit)
