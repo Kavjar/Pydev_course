@@ -21,6 +21,6 @@ n = input()
 if n.isdigit():
     n = int(n)
     result = list(eratosthenes(n).intersection(mersen_numbers(n))) # Mersenne primes
-    print("Mersen primes less than {}:".format(n), sorted(result))
+    print("Mersenne primes less than {}:".format(n), sorted(result))
 else:
     print("You've entered not natural number")
